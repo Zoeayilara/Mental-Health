@@ -1,0 +1,44 @@
+.profile-page { display: flex; flex-direction: column; gap: 20px; max-width: 680px; }
+
+.prof-avatar-card { display: flex; align-items: center; gap: 24px; }
+
+.prof-av-wrap { flex-shrink: 0; }
+.prof-avatar {
+  width: 100px; height: 100px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 36px; font-weight: 700;
+  position: relative; cursor: pointer; overflow: hidden;
+  border: 4px solid var(--accent-soft);
+  transition: transform 0.18s;
+}
+.prof-avatar:hover { transform: scale(1.04); }
+.prof-avatar:hover .prof-av-overlay { opacity: 1; }
+.prof-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.prof-av-overlay {
+  position: absolute; inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 24px; opacity: 0; transition: opacity 0.2s;
+}
+
+.prof-av-name { font-family: var(--font-disp); font-size: 22px; font-weight: 700; color: var(--text1); }
+.prof-av-email { font-size: 13px; color: var(--text2); margin: 4px 0 12px; }
+
+.prof-form { display: flex; flex-direction: column; gap: 16px; }
+
+.form-feedback {
+  padding: 10px 14px; border-radius: 10px; font-size: 13px; margin-top: 8px;
+}
+.form-feedback.success { background: rgba(74,222,128,0.1); color: var(--green); border: 1px solid rgba(74,222,128,0.3); }
+.form-feedback.error   { background: rgba(248,113,113,0.1); color: var(--red);   border: 1px solid rgba(248,113,113,0.3); }
+
+.account-info { display: flex; flex-direction: column; gap: 0; }
+.account-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 0; border-bottom: 1px solid var(--border);
+  font-size: 14px;
+}
+.account-row:last-child { border-bottom: none; }
+.account-row span:first-child { color: var(--text2); }
+.account-row span:last-child  { color: var(--text1); font-weight: 500; }

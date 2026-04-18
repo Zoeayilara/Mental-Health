@@ -1,3 +1,4 @@
 # Ignore local environment values
+frontend/.env
 frontend/.env.local
 frontend/.env.*.local

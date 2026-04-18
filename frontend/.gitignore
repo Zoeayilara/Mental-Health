@@ -1,0 +1,4 @@
+# Ignore local environment values
+.env
+.env.local
+.env.*.local
