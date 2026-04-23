@@ -1,7 +1,7 @@
 import sqlite3
 import os
 
-DB_PATH = 'calmbot.db'
+DB_PATH = os.getenv('DATABASE_URL', 'sqlite:///calmbot.db').replace('sqlite:///', '')
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)

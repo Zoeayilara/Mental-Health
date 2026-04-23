@@ -1,4 +1,4 @@
-# CalmBot — Full Stack Mental Health Web App
+so n# CalmBot — Full Stack Mental Health Web App
 
 ## Quick Setup (Run these commands in order)
 

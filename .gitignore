@@ -2,3 +2,17 @@
 frontend/.env
 frontend/.env.local
 frontend/.env.*.local
+backend/.env
+
+# Build artifacts
+frontend/dist/
+backend/dist/
+
+# Local dependencies
+frontend/node_modules/
+
+# Local runtime files
+backend/calmbot.db
+backend/uploads/
+backend/__pycache__/
+*.pyc
